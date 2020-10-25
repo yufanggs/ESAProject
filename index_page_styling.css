@@ -1,0 +1,22 @@
+input.search {
+	display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0492C2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;}
+
+body {
+			background-image: url("1.jpg");
+			background-repeat: no-repeat;
+			background-position: left top;
+			margin-right: 200px;
+			background-attachment: fixed;
+	}
+	image{ width: 100%; height: auto;}

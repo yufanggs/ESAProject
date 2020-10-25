@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<link rel=" stylesheet" type="text/css" href="../index_page_styling.css">
+<style>
+table {border-collapse: collapse;}
+th {border: 1px solid black;padding:5px;text-align:center;}
+td {border: 1px solid black;padding:5px;text-align:left;}
+</style>
+<head>
+<!-- Add a suitable title for this page -->
+<title>Design Teams</title>
+</head>
+<body>
+<!-- What is the name of this folder? -->
+<h2>Modular Architecture</h2>
+<h3>Identifying the subsystem</h3>
+<img src="Subsystems.png" width="801" height="511" alt=""/>
+</table>
+
+</body><p>This shows how we group the game elements into different subsystems.</p>
+<p>In this case, there will  be five subsystems which are movement, location, timing, cards and scoring subsystems.</p>
+<h3>Interactions between subsystems</h3>
+<img src="modular architecture.png" width="801" height="600" alt=""/>
+<p>This shows the flow and interactions between individual subsystems. </p>
+<p>When the user start playing by throwing a dice, the massage will be passed to the movement subsystem. The number on the dice translates into the number of movements the charactor piece can move. When the charactor lands on a location in the game board, the massage will be passed to the location subsystem. Depending on the type of location the charactor lands on, there will be different outcomes. This outcomes will the passed to the user to perform different actions. If it lands on landmarks or special MRT, the user will draw question card or oppotunity cards respectively. And this will be happening in the card subsystem. If the user draws a question cards, the massage will be passed to timing subsystem and scoring subsystem at the same time. In timing subsystem, the timer will start. If the user manages to give a response within time limit, the massage will be passed to the scoring system. If the user fails to give a response within the time limit, there is no scores straightaway. In the scoring system, if the response gived by the user matched the question answer, the user will be awarded one point, and he will exit the system. His round has finished.</p>
+<h3>Design Structure Matrix</h3>
+<img src="DSM.png" width="900" height="297" alt=""/>
+<p>By running the Design Structure Matix, we are able to see that there are five distict groups. Therefore, this could increase our work efficiency through paralle work.</p>
+</html>
+<br> </br>
+<form>
+  <input type="button" value="Go back!" onclick="history.back()" class="search">
+</form>
